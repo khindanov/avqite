@@ -18,7 +18,7 @@ It is recommended to use a **virtual environment**:
 
 2. Using **conda**
 
-   - Install Anaconda or Miniconda from the [official website](https://docs.conda.io/en/latest/miniconda.html)
+   - Install Miniconda from the [official website](https://docs.conda.io/en/latest/miniconda.html)
 
    ```bash
    conda create -n myenv python=3.10
@@ -48,7 +48,7 @@ This package uses **MPI (mpi4py)** for parallel execution. See official **mpi4py
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/khidanov/avqite.git
+   git clone https://github.com/khindanov/avqite.git
    ```
 
 2. Create and activate a new environment (optional)
