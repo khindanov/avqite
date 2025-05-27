@@ -1,0 +1,83 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "avqite/_version.py"
+
+[project]
+name = "avqite"
+dynamic = ["version"]
+description = "Adaptive Variational Quantum Imaginary Time Evolution."
+readme = { file = "README.md", content-type = "text/markdown" }
+authors = [
+    { name = "Alekei Khindanov", email = "khindalex@gmail.com" },
+    { name = "Yongxin Yao", email = "ykent@ameslab.gov" }
+    ]
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+keywords = [
+    "quantum",
+    "physics",
+    "adaptive",
+    "variational",
+    "avqite",
+    "quimb",
+    "tensor",
+    "networks",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "quimb==1.8.4",
+    "qutip==5.0.3.post1",
+    "h5py",
+    "qiskit==1.4.1"
+]
+
+[project.urls]
+Repository = "https://github.com/khindanov/avqite"
+Documentation = "https://github.com/khindanov/avqite#readme"
+
+[project.optional-dependencies]
+mpi = [
+    "mpi4py",
+]
+cotengra_advanced = [
+    "cmaes",
+    "cotengrust",
+    "loky",
+    "networkx",
+    "opt_einsum",
+    "optuna",
+]
+kahypar = [
+    "kahypar",
+]
+
+[tool.ruff]
+# General settings for Ruff
+line-length = 88
+select = ["E", "F", "I", "W", "C", "B", "D", "Q", "RUF", "UP", "N", "ANN", "S"]  # Common lint codes (E=pycodestyle, F=pyflakes, I=imports, etc.)
+
+# Import sorting (I group)
+# Ruff will sort imports automatically when using --fix
+
+[tool.mypy]
+python_version = "3.12"
+check_untyped_defs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+strict_optional = true
+warn_unused_configs = true
+warn_return_any = true
+warn_unused_ignores = true
