@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import argparse
+import os
 import sys
 import warnings
 
@@ -119,10 +120,11 @@ parser.add_argument(
 )
 parser.add_argument("-be", "--backend", type=str, default="None", help="Backend.")
 
+model_dir = os.path.dirname(os.path.abspath(__file__))
 
 args = parser.parse_args()
 
-mdl = model(localh=args.localh, filename=args.filename, model_dir=args.model_dir)
+mdl = model(localh=args.localh, filename=args.filename, model_dir=model_dir)
 ans = ansatzSinglePool(
     mdl,
     rcut=args.rcut,
@@ -138,7 +140,7 @@ ans = ansatzSinglePool(
     tmax=args.tmax,
     tf=args.tf,
     filename=args.filename,
-    model_dir=args.model_dir,
+    model_dir=model_dir,
     optimize=args.optimize,
     simplify_sequence=args.simplify_sequence,
     backend=args.backend,

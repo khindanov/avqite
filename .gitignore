@@ -177,3 +177,5 @@ cython_debug/
 .vscode/
 
 avqite/_version.py
+outputs/
+data/
