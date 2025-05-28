@@ -3,6 +3,10 @@
 # avqite
 Tensor-network implementation of the Adaptive Variational Quantum Imaginary-Time Evolution (AVQITE) algorithm using Quimb. The code is parallelized using MPI.
 
+## Authors
+
+- **Yongxin Yao** ([@yaoyongxin](https://github.com/yaoyongxin))
+- **Aleksei Khindanov** ([@khindanov](https://github.com/khindanov))
 
 ## Prerequisites
 
