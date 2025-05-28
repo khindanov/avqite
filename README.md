@@ -87,7 +87,7 @@ This package uses **MPI (mpi4py)** for parallel execution. See official **mpi4py
       ```bash
       mpiexec -n <number_of_processes> python examples/1dtfim/run.py --filename N10g0.1
       ```
-   - 1D LGT example
+   - 1D $Z_2$ LGT example
       ```bash
       mpiexec -n <number_of_processes> python examples/1dlgt/run.py --filename L9Zbasis0hz0seed --notetras -m 100 --tf 1.0
       ```
