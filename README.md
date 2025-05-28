@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15531600.svg)](https://doi.org/10.5281/zenodo.15531600)
+
 # avqite
 Tensor-network implementation of the Adaptive Variational Quantum Imaginary-Time Evolution (AVQITE) algorithm using Quimb. The code is parallelized using MPI.
 
