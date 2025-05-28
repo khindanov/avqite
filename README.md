@@ -7,6 +7,7 @@ Tensor-network implementation of the Adaptive Variational Quantum Imaginary-Time
 
 - **Yongxin Yao** ([@yaoyongxin](https://github.com/yaoyongxin))
 - **Aleksei Khindanov** ([@khindanov](https://github.com/khindanov))
+- **Thomas Iadecola**
 
 ## Prerequisites
 
